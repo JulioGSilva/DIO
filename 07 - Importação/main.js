@@ -1,4 +1,4 @@
-import funcoesAuxiliares from "./funcoes-auxiliares";
+const 
 
 print('hellow word!');
 gets();
