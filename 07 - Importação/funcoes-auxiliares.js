@@ -6,4 +6,4 @@ function print(text) {
     console.log(text);
 }
 
-export default funcoue-auxiliares()
+module.exports = {gets, print}
