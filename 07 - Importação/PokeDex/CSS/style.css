@@ -1,2 +1,30 @@
 @charset 'UTF-8';
 
+* {
+    font-family: 'roboto';
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(138, 138, 138);
+}
+
+.content {
+    padding: 1em;
+}
+
+.pokemons{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.pokemons li {
+    margin: .5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #14A06F;
+    color: white;
+}
