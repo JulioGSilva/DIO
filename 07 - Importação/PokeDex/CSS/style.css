@@ -1,9 +1,11 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 * {
     font-family: 'roboto';
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
 }
 
 .content {
-    padding: 1em;
+    padding: 5px;
 }
 
 .pokemons{
@@ -21,10 +23,38 @@ body {
     
 }
 
-.pokemons li {
-    margin: .5rem;
-    padding: 2rem;
+.pokemons > li {
+    margin: .2rem;
+    padding: 1rem;
     border-radius: 1rem;
-    background-color: #14A06F;
-    color: white;
+    background: linear-gradient(to bottom, #aaffd5de, white);
+    color: black;
+    text-align: end;
 }
+
+img {
+    max-width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+h4 {
+    text-align: start;
+}
+
+.types {
+    display: inline-block;
+}
+
+.type {
+    background-color: rgba(89, 202, 89, 0.486);
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+    margin: 3px;
+}
+
