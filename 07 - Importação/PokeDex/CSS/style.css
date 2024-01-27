@@ -9,31 +9,44 @@
 }
 
 body {
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(243, 243, 243);
 }
 
 .content {
     padding: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
 }
 
 .pokemons{
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr;
 }
 
 .pokemons > li {
-    margin: .2rem;
+    margin: .3rem;
     padding: 1rem;
     border-radius: 1rem;
-    background: linear-gradient(to bottom, #aaffd5de, white);
     color: black;
     text-align: end;
 }
 
+.card-grass {
+    background: linear-gradient(to bottom, #aaffd5de, white);
+}
+
+.card-fire {
+    background: linear-gradient(to bottom, rgba(250, 155, 155, 0.871), white);
+}
+
+.card-water {
+    background: linear-gradient(to bottom, rgba(155, 199, 250, 0.871), white);
+}
+
 img {
-    max-width: 50%;
+    max-width: 120px;
     border-radius: 10px;
     text-align: left;
     display: inline-block;
@@ -49,12 +62,81 @@ h4 {
     display: inline-block;
 }
 
-.type {
+.number {
+    font-size: small;
+}
+
+.grass {
     background-color: rgba(89, 202, 89, 0.486);
     border-radius: 25px;
     padding: 5px;
     text-align: center;
     font-size: small;
     margin: 3px;
+    min-width: 120px;
 }
 
+.poison {
+    background-color: rgba(95, 10, 121, 0.486);
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+    margin: 3px;
+    min-width: 120px;
+}
+
+.fire {
+    background-color: rgba(255, 0, 0, 0.486);
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+    margin: 3px;
+    min-width: 120px;
+}
+
+.flying {
+    background-color: rgba(68, 0, 255, 0.486);
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+    margin: 3px;
+    min-width: 120px;
+}
+
+.water {
+    background-color: rgba(0, 81, 255, 0.486);
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+    margin: 3px;
+    min-width: 120px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 375px) {
+.pokemons{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 992px) {
+.pokemons{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
